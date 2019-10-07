@@ -1,0 +1,97 @@
+@import url(httpsfonts.googleapis.comcssfamily=Open+Sans300,400);
+
+body {
+  font-family Open Sans, Verdana, sans-serif;
+  color rgba(0, 0, 0, .87);
+  font-weight 400;
+}
+
+
+.topnav {
+ background-color #333;
+ overflow hidden;
+}
+
+.topnav a {
+ float left;
+ color #f2f2f2;
+ text-align center;
+ padding 14px 16px;
+ text-decoration none;
+ font-size 17px;
+ font-family 'Oswald', sans-serif;
+}
+
+.topnav ahover {
+ background-color #00FFFF;
+ color black;
+}
+
+.topnav a.active {
+ background-color yellow;
+ color black;
+}
+
+
+
+ EACH STATION CARD  
+
+.card {
+  border-radius 16px;
+  margin 0 auto;
+  width 300px;
+  max-width 100%;
+  min-height 300px;
+  background black;
+  overflow hidden;
+  background-size cover;
+}
+
+.info {
+  position relative;
+  width 100%;
+  height 300px;
+  background-color grey;
+  transform translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition transform 0.5s ease-out;
+}
+
+.infobefore {
+  z-index -1;
+  display block;
+  position absolute;
+  content ' ';
+  width 100%;
+  height 100%;
+  overflow hidden;
+  filter blur(10px);
+  background-size cover;
+  opacity 0.25;
+  transform translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition transform 0.5s ease-out;
+}
+
+.cardhover .info,
+.cardhover .infobefore {
+  transform translateY(0) translateZ(0);
+}
+
+.title {
+  padding 54px;
+  font-size 40px;
+  line-height 1;
+  color black;
+}
+
+.description {
+  margin 0;
+  padding 0 24px 24px;
+  font-size 18px;
+  line-height 1.5;
+}
+
+
