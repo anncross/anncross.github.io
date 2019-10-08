@@ -1,4 +1,5 @@
-var jsonObj = $.getJSON( "CDPStations.json", function() {
+var jsonObj = $.getJSON( "CDPStations.json", function(data) {
+  console.log(data);
   console.log( "Pass" );
 })
   .done(function() {
@@ -13,12 +14,13 @@ var jsonObj = $.getJSON( "CDPStations.json", function() {
  
 console.log(jsonObj); 
 
+console.log(jsonObj.responseJson);
 
 jsonObj.always(function() {
   console.log( "Successfully pass!" );
 });
 
-jsonObj =  $.parseJSON(jsonObj);
+jsonObj =  jsonObj.responseJson;
 var info = jsonObj.clients;
 console.log(info);
 var stations = info.stations;
