@@ -1,8 +1,8 @@
 var jsonObj = $.getJSON( "CDPStations.json", function() {
-  console.log( "success" );
+  console.log( "Pass" );
 })
   .done(function() {
-    console.log( "second success" );
+    console.log( "second pass" );
   })
   .fail(function() {
     console.log( "error" );
@@ -12,8 +12,8 @@ var jsonObj = $.getJSON( "CDPStations.json", function() {
   });
  
 
-jqxhr.always(function() {
-  console.log( "second complete" );
+jsonObj.always(function() {
+  console.log( "Successfully pass!" );
 });
 
 var info = jsonObj.clients;
