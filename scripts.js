@@ -58,7 +58,7 @@ var jsonObj = {
         description:
           "Southern Oregon Public Television is the Public Broadcasting Service member network for most of the southwest region of the U.S. state of Oregon. It operates KSYS in Medford and full-time satellite KFTS in Klamath Falls. Studios are located on South Fir Street in downtown Medford.",
         logo:
-          "http://www.soptv.org/wp-content/themes/soptv/assets/img/soptv-logo.png",
+          "https://www.soptv.org/wp-content/themes/soptv/assets/img/soptv-logo.png",
         address: {
           street: "28 South Fir Street, Ste. 200",
           city: "Medford",
