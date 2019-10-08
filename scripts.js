@@ -5,7 +5,7 @@ var jsonObj = $.getJSON( "CDPStations.json", function() {
     console.log( "second pass" );
   })
   .fail(function() {
-    console.log( "Error!" );
+    console.log( "Oh no...error!" );
   })
   .always(function() {
     console.log( "complete" );
