@@ -16,7 +16,6 @@ jqxhr.always(function() {
   console.log( "second complete" );
 });
 
-
 var info = jsonObj.clients;
 console.log(info);
 var stations = info.stations;
