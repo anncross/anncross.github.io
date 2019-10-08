@@ -1,6 +1,6 @@
 {
     clients: {
-    company: "CDP",
+    company: "CDP.",
     stations: [
       {
         title: "DPTV (WTVS-Detroit)",
