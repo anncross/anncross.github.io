@@ -1,21 +1,12 @@
 var jsonObj = $.getJSON( "CDPStations.json", function() {
   console.log( "Pass" );
+  
+  
 })
   .done(function() {
     console.log( "second pass" );
-  })
-  .fail(function() {
-    console.log( "Oh no...error!" );
-  })
-  .always(function() {
-    console.log( "complete" );
-  });
- 
-
-jsonObj.always(function() {
-  console.log( "Successfully pass!" );
-});
-
+	
+	jsonObj =  $.parseJSON(j);
 var info = jsonObj.clients;
 console.log(info);
 var stations = info.stations;
@@ -52,4 +43,20 @@ for(var i = 0; i < stations.length; i++){
   document.getElementById("card-" + i).style.backgroundSize = "contain";
   document.getElementById("card-" + i).style.backgroundRepeat = "no-repeat";
   document.getElementById("card-" + i).style.backgroundPosition = "center";
+	
+  })
+  .fail(function() {
+    console.log( "Oh no...error!" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+ 
+console.log(jsonObj); 
+
+
+jsonObj.always(function() {
+  console.log( "Successfully pass!" );
+});
+
 }
