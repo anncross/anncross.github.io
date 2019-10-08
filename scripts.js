@@ -70,6 +70,7 @@ var jsonObj = {
   }
 };
 
+
 var info = jsonObj.clients;
 console.log(info);
 var stations = info.stations;
